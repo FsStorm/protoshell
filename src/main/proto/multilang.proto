@@ -1,0 +1,137 @@
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
+
+syntax = "proto3";
+
+option java_package = "com.prolucid.protoshell.messages";
+option csharp_namespace = "Prolucid.ProtoShell.Messages";
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+
+message Context {
+	int32 taskId = 1;
+	map<int32,string> taskComponents = 2;
+	string componentId = 3;
+}
+
+message Handshake {
+	string pidDir = 1;
+	Context context = 2;
+	map<string,google.protobuf.Value> config = 3;
+}
+
+message Variant {
+    oneof kind {
+        string    strVal = 1;
+        int32     int32Val = 2;
+        int64     int64Val = 3;
+        float     floatVal = 4;
+        double    doubleVal = 5;
+        bool	  boolVal = 6;
+        bytes     bytesVal = 7;
+        google.protobuf.Timestamp timestampVal = 8;
+        google.protobuf.NullValue noneVal = 9;
+    }
+}
+
+message StreamIn {
+	string id = 1;
+	string comp = 2;
+	string stream = 3;
+	int32 task = 4;
+	repeated Variant tuple = 5;
+}
+
+message TaskIdsReply {
+	repeated int32 taskIds = 1;
+}
+
+message Heartbeat {
+}
+
+message NextCommand {
+}
+
+message AckCommand {
+	string id = 1;
+}
+
+message NackCommand {
+	string id = 1;
+}
+
+message StormMsg {
+    oneof msg {
+        Handshake handshake = 1;
+        NextCommand nextCmd = 2;
+        AckCommand ackCmd = 3;
+        NackCommand nackCmd = 4;
+        StreamIn streamIn = 5;
+        TaskIdsReply taskIds= 6;
+        Heartbeat hearbeat = 7;
+    }
+}
+
+message OkReply {
+	string id = 1;
+}
+
+message FailReply {
+	string id = 1;
+}
+
+message EmitCommand {
+	string id = 1;
+	string stream = 2;
+    repeated Variant tuple = 3;
+	repeated string anchors = 4;
+	int32 task = 5;
+	bool needTaskIds = 6;
+}
+
+message LogCommand {
+    enum LogLevel {
+        Trace = 0;
+        Debug = 1;
+        Info = 2;
+        Warn = 3;
+        Error = 4;
+    }
+
+    string text = 1;
+	LogLevel level = 2;
+}
+
+message PidReply {
+	int32 pid = 1;
+}
+
+message SyncReply {
+}
+
+message Metric {
+    string name = 1;
+    repeated google.protobuf.Value parameters = 2;
+}
+
+message ShellMsg {
+    oneof msg {
+        OkReply ok = 1;
+        FailReply fail = 2;
+        EmitCommand emit = 3;
+        PidReply pid = 4;
+        LogCommand log = 5;
+        SyncReply sync = 6;
+    }
+    Metric metric = 7;
+}
