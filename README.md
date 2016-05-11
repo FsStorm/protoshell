@@ -5,13 +5,11 @@ Protoshell implements Storm's multilang using Protobuf serializer to improve thr
 It uses compact binary communications protocol and transfers tuples as union fields, mapping Protobuf supported types to Java types and vice versa.
 When a type doesn't have Protobuf representation it is mapped to byte[].
 
-Current version of Protoshell is built against v0.10.0 of Storm.
-
 #Performance
 Protoshell currently provides TBD throughput, when compared to the standard Storm JSON multilang protocol.
 
 #The protocol
-ProtobufStorm formalizes multilang protocol via unions:
+Protoshell captures multilang protocol as unions:
  - StormMsg for messages that could be sent from Storm
  - ShellMsg for messages that could be sent from a shell spout or a bolt
 
