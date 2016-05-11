@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.prolucid.protoshell</groupId>
   <artifactId>protoshell</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <repositories>
     <repository>
@@ -21,7 +21,7 @@
     <dependency>
       <groupId>org.apache.storm</groupId>
       <artifactId>storm-core</artifactId>
-      <version>0.10.0</version>
+      <version>1.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
