@@ -5847,6 +5847,636 @@ public final class Multilang {
 
   }
 
+  public interface ActivateCommandOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ActivateCommand)
+      com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * Protobuf type {@code ActivateCommand}
+   */
+  public  static final class ActivateCommand extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:ActivateCommand)
+      ActivateCommandOrBuilder {
+    // Use ActivateCommand.newBuilder() to construct.
+    private ActivateCommand(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private ActivateCommand() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private ActivateCommand(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry) {
+      this();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw new RuntimeException(e.setUnfinishedMessage(this));
+      } catch (java.io.IOException e) {
+        throw new RuntimeException(
+            new com.google.protobuf.InvalidProtocolBufferException(
+                e.getMessage()).setUnfinishedMessage(this));
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.prolucid.protoshell.messages.Multilang.internal_static_ActivateCommand_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.prolucid.protoshell.messages.Multilang.internal_static_ActivateCommand_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.prolucid.protoshell.messages.Multilang.ActivateCommand.class, com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder.class);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.prolucid.protoshell.messages.Multilang.ActivateCommand prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code ActivateCommand}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ActivateCommand)
+        com.prolucid.protoshell.messages.Multilang.ActivateCommandOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.prolucid.protoshell.messages.Multilang.internal_static_ActivateCommand_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.prolucid.protoshell.messages.Multilang.internal_static_ActivateCommand_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.prolucid.protoshell.messages.Multilang.ActivateCommand.class, com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder.class);
+      }
+
+      // Construct using com.prolucid.protoshell.messages.Multilang.ActivateCommand.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.prolucid.protoshell.messages.Multilang.internal_static_ActivateCommand_descriptor;
+      }
+
+      public com.prolucid.protoshell.messages.Multilang.ActivateCommand getDefaultInstanceForType() {
+        return com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance();
+      }
+
+      public com.prolucid.protoshell.messages.Multilang.ActivateCommand build() {
+        com.prolucid.protoshell.messages.Multilang.ActivateCommand result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.prolucid.protoshell.messages.Multilang.ActivateCommand buildPartial() {
+        com.prolucid.protoshell.messages.Multilang.ActivateCommand result = new com.prolucid.protoshell.messages.Multilang.ActivateCommand(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.prolucid.protoshell.messages.Multilang.ActivateCommand) {
+          return mergeFrom((com.prolucid.protoshell.messages.Multilang.ActivateCommand)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.prolucid.protoshell.messages.Multilang.ActivateCommand other) {
+        if (other == com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance()) return this;
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.prolucid.protoshell.messages.Multilang.ActivateCommand parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.prolucid.protoshell.messages.Multilang.ActivateCommand) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ActivateCommand)
+    }
+
+    // @@protoc_insertion_point(class_scope:ActivateCommand)
+    private static final com.prolucid.protoshell.messages.Multilang.ActivateCommand DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.prolucid.protoshell.messages.Multilang.ActivateCommand();
+    }
+
+    public static com.prolucid.protoshell.messages.Multilang.ActivateCommand getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ActivateCommand>
+        PARSER = new com.google.protobuf.AbstractParser<ActivateCommand>() {
+      public ActivateCommand parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        try {
+          return new ActivateCommand(input, extensionRegistry);
+        } catch (RuntimeException e) {
+          if (e.getCause() instanceof
+              com.google.protobuf.InvalidProtocolBufferException) {
+            throw (com.google.protobuf.InvalidProtocolBufferException)
+                e.getCause();
+          }
+          throw e;
+        }
+      }
+    };
+
+    public static com.google.protobuf.Parser<ActivateCommand> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ActivateCommand> getParserForType() {
+      return PARSER;
+    }
+
+    public com.prolucid.protoshell.messages.Multilang.ActivateCommand getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface DeactivateCommandOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:DeactivateCommand)
+      com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * Protobuf type {@code DeactivateCommand}
+   */
+  public  static final class DeactivateCommand extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:DeactivateCommand)
+      DeactivateCommandOrBuilder {
+    // Use DeactivateCommand.newBuilder() to construct.
+    private DeactivateCommand(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private DeactivateCommand() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private DeactivateCommand(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry) {
+      this();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw new RuntimeException(e.setUnfinishedMessage(this));
+      } catch (java.io.IOException e) {
+        throw new RuntimeException(
+            new com.google.protobuf.InvalidProtocolBufferException(
+                e.getMessage()).setUnfinishedMessage(this));
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.prolucid.protoshell.messages.Multilang.internal_static_DeactivateCommand_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.prolucid.protoshell.messages.Multilang.internal_static_DeactivateCommand_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.prolucid.protoshell.messages.Multilang.DeactivateCommand.class, com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder.class);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.prolucid.protoshell.messages.Multilang.DeactivateCommand prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code DeactivateCommand}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:DeactivateCommand)
+        com.prolucid.protoshell.messages.Multilang.DeactivateCommandOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.prolucid.protoshell.messages.Multilang.internal_static_DeactivateCommand_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.prolucid.protoshell.messages.Multilang.internal_static_DeactivateCommand_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.prolucid.protoshell.messages.Multilang.DeactivateCommand.class, com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder.class);
+      }
+
+      // Construct using com.prolucid.protoshell.messages.Multilang.DeactivateCommand.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.prolucid.protoshell.messages.Multilang.internal_static_DeactivateCommand_descriptor;
+      }
+
+      public com.prolucid.protoshell.messages.Multilang.DeactivateCommand getDefaultInstanceForType() {
+        return com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance();
+      }
+
+      public com.prolucid.protoshell.messages.Multilang.DeactivateCommand build() {
+        com.prolucid.protoshell.messages.Multilang.DeactivateCommand result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.prolucid.protoshell.messages.Multilang.DeactivateCommand buildPartial() {
+        com.prolucid.protoshell.messages.Multilang.DeactivateCommand result = new com.prolucid.protoshell.messages.Multilang.DeactivateCommand(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.prolucid.protoshell.messages.Multilang.DeactivateCommand) {
+          return mergeFrom((com.prolucid.protoshell.messages.Multilang.DeactivateCommand)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.prolucid.protoshell.messages.Multilang.DeactivateCommand other) {
+        if (other == com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance()) return this;
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.prolucid.protoshell.messages.Multilang.DeactivateCommand parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:DeactivateCommand)
+    }
+
+    // @@protoc_insertion_point(class_scope:DeactivateCommand)
+    private static final com.prolucid.protoshell.messages.Multilang.DeactivateCommand DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.prolucid.protoshell.messages.Multilang.DeactivateCommand();
+    }
+
+    public static com.prolucid.protoshell.messages.Multilang.DeactivateCommand getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<DeactivateCommand>
+        PARSER = new com.google.protobuf.AbstractParser<DeactivateCommand>() {
+      public DeactivateCommand parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        try {
+          return new DeactivateCommand(input, extensionRegistry);
+        } catch (RuntimeException e) {
+          if (e.getCause() instanceof
+              com.google.protobuf.InvalidProtocolBufferException) {
+            throw (com.google.protobuf.InvalidProtocolBufferException)
+                e.getCause();
+          }
+          throw e;
+        }
+      }
+    };
+
+    public static com.google.protobuf.Parser<DeactivateCommand> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<DeactivateCommand> getParserForType() {
+      return PARSER;
+    }
+
+    public com.prolucid.protoshell.messages.Multilang.DeactivateCommand getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface StormMsgOrBuilder extends
       // @@protoc_insertion_point(interface_extends:StormMsg)
       com.google.protobuf.MessageOrBuilder {
@@ -5906,13 +6536,31 @@ public final class Multilang {
     com.prolucid.protoshell.messages.Multilang.TaskIdsReplyOrBuilder getTaskIdsOrBuilder();
 
     /**
-     * <code>optional .Heartbeat hearbeat = 7;</code>
+     * <code>optional .Heartbeat heartbeat = 7;</code>
      */
-    com.prolucid.protoshell.messages.Multilang.Heartbeat getHearbeat();
+    com.prolucid.protoshell.messages.Multilang.Heartbeat getHeartbeat();
     /**
-     * <code>optional .Heartbeat hearbeat = 7;</code>
+     * <code>optional .Heartbeat heartbeat = 7;</code>
      */
-    com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder getHearbeatOrBuilder();
+    com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder getHeartbeatOrBuilder();
+
+    /**
+     * <code>optional .ActivateCommand activateCmd = 8;</code>
+     */
+    com.prolucid.protoshell.messages.Multilang.ActivateCommand getActivateCmd();
+    /**
+     * <code>optional .ActivateCommand activateCmd = 8;</code>
+     */
+    com.prolucid.protoshell.messages.Multilang.ActivateCommandOrBuilder getActivateCmdOrBuilder();
+
+    /**
+     * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+     */
+    com.prolucid.protoshell.messages.Multilang.DeactivateCommand getDeactivateCmd();
+    /**
+     * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+     */
+    com.prolucid.protoshell.messages.Multilang.DeactivateCommandOrBuilder getDeactivateCmdOrBuilder();
 
     public com.prolucid.protoshell.messages.Multilang.StormMsg.MsgCase getMsgCase();
   }
@@ -6052,6 +6700,34 @@ public final class Multilang {
               msgCase_ = 7;
               break;
             }
+            case 66: {
+              com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder subBuilder = null;
+              if (msgCase_ == 8) {
+                subBuilder = ((com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_).toBuilder();
+              }
+              msg_ =
+                  input.readMessage(com.prolucid.protoshell.messages.Multilang.ActivateCommand.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_);
+                msg_ = subBuilder.buildPartial();
+              }
+              msgCase_ = 8;
+              break;
+            }
+            case 74: {
+              com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder subBuilder = null;
+              if (msgCase_ == 9) {
+                subBuilder = ((com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_).toBuilder();
+              }
+              msg_ =
+                  input.readMessage(com.prolucid.protoshell.messages.Multilang.DeactivateCommand.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_);
+                msg_ = subBuilder.buildPartial();
+              }
+              msgCase_ = 9;
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -6086,7 +6762,9 @@ public final class Multilang {
       NACKCMD(4),
       STREAMIN(5),
       TASKIDS(6),
-      HEARBEAT(7),
+      HEARTBEAT(7),
+      ACTIVATECMD(8),
+      DEACTIVATECMD(9),
       MSG_NOT_SET(0);
       private int value = 0;
       private MsgCase(int value) {
@@ -6100,7 +6778,9 @@ public final class Multilang {
           case 4: return NACKCMD;
           case 5: return STREAMIN;
           case 6: return TASKIDS;
-          case 7: return HEARBEAT;
+          case 7: return HEARTBEAT;
+          case 8: return ACTIVATECMD;
+          case 9: return DEACTIVATECMD;
           case 0: return MSG_NOT_SET;
           default: throw new java.lang.IllegalArgumentException(
             "Value is undefined for this oneof enum.");
@@ -6237,24 +6917,64 @@ public final class Multilang {
       return com.prolucid.protoshell.messages.Multilang.TaskIdsReply.getDefaultInstance();
     }
 
-    public static final int HEARBEAT_FIELD_NUMBER = 7;
+    public static final int HEARTBEAT_FIELD_NUMBER = 7;
     /**
-     * <code>optional .Heartbeat hearbeat = 7;</code>
+     * <code>optional .Heartbeat heartbeat = 7;</code>
      */
-    public com.prolucid.protoshell.messages.Multilang.Heartbeat getHearbeat() {
+    public com.prolucid.protoshell.messages.Multilang.Heartbeat getHeartbeat() {
       if (msgCase_ == 7) {
          return (com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_;
       }
       return com.prolucid.protoshell.messages.Multilang.Heartbeat.getDefaultInstance();
     }
     /**
-     * <code>optional .Heartbeat hearbeat = 7;</code>
+     * <code>optional .Heartbeat heartbeat = 7;</code>
      */
-    public com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder getHearbeatOrBuilder() {
+    public com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder getHeartbeatOrBuilder() {
       if (msgCase_ == 7) {
          return (com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_;
       }
       return com.prolucid.protoshell.messages.Multilang.Heartbeat.getDefaultInstance();
+    }
+
+    public static final int ACTIVATECMD_FIELD_NUMBER = 8;
+    /**
+     * <code>optional .ActivateCommand activateCmd = 8;</code>
+     */
+    public com.prolucid.protoshell.messages.Multilang.ActivateCommand getActivateCmd() {
+      if (msgCase_ == 8) {
+         return (com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_;
+      }
+      return com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance();
+    }
+    /**
+     * <code>optional .ActivateCommand activateCmd = 8;</code>
+     */
+    public com.prolucid.protoshell.messages.Multilang.ActivateCommandOrBuilder getActivateCmdOrBuilder() {
+      if (msgCase_ == 8) {
+         return (com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_;
+      }
+      return com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance();
+    }
+
+    public static final int DEACTIVATECMD_FIELD_NUMBER = 9;
+    /**
+     * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+     */
+    public com.prolucid.protoshell.messages.Multilang.DeactivateCommand getDeactivateCmd() {
+      if (msgCase_ == 9) {
+         return (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_;
+      }
+      return com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance();
+    }
+    /**
+     * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+     */
+    public com.prolucid.protoshell.messages.Multilang.DeactivateCommandOrBuilder getDeactivateCmdOrBuilder() {
+      if (msgCase_ == 9) {
+         return (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_;
+      }
+      return com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -6290,6 +7010,12 @@ public final class Multilang {
       if (msgCase_ == 7) {
         output.writeMessage(7, (com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_);
       }
+      if (msgCase_ == 8) {
+        output.writeMessage(8, (com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_);
+      }
+      if (msgCase_ == 9) {
+        output.writeMessage(9, (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_);
+      }
     }
 
     public int getSerializedSize() {
@@ -6324,6 +7050,14 @@ public final class Multilang {
       if (msgCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, (com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_);
+      }
+      if (msgCase_ == 8) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, (com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_);
+      }
+      if (msgCase_ == 9) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_);
       }
       memoizedSize = size;
       return size;
@@ -6503,10 +7237,24 @@ public final class Multilang {
           }
         }
         if (msgCase_ == 7) {
-          if (hearbeatBuilder_ == null) {
+          if (heartbeatBuilder_ == null) {
             result.msg_ = msg_;
           } else {
-            result.msg_ = hearbeatBuilder_.build();
+            result.msg_ = heartbeatBuilder_.build();
+          }
+        }
+        if (msgCase_ == 8) {
+          if (activateCmdBuilder_ == null) {
+            result.msg_ = msg_;
+          } else {
+            result.msg_ = activateCmdBuilder_.build();
+          }
+        }
+        if (msgCase_ == 9) {
+          if (deactivateCmdBuilder_ == null) {
+            result.msg_ = msg_;
+          } else {
+            result.msg_ = deactivateCmdBuilder_.build();
           }
         }
         result.msgCase_ = msgCase_;
@@ -6550,8 +7298,16 @@ public final class Multilang {
             mergeTaskIds(other.getTaskIds());
             break;
           }
-          case HEARBEAT: {
-            mergeHearbeat(other.getHearbeat());
+          case HEARTBEAT: {
+            mergeHeartbeat(other.getHeartbeat());
+            break;
+          }
+          case ACTIVATECMD: {
+            mergeActivateCmd(other.getActivateCmd());
+            break;
+          }
+          case DEACTIVATECMD: {
+            mergeDeactivateCmd(other.getDeactivateCmd());
             break;
           }
           case MSG_NOT_SET: {
@@ -7380,58 +8136,58 @@ public final class Multilang {
       }
 
       private com.google.protobuf.SingleFieldBuilder<
-          com.prolucid.protoshell.messages.Multilang.Heartbeat, com.prolucid.protoshell.messages.Multilang.Heartbeat.Builder, com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder> hearbeatBuilder_;
+          com.prolucid.protoshell.messages.Multilang.Heartbeat, com.prolucid.protoshell.messages.Multilang.Heartbeat.Builder, com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder> heartbeatBuilder_;
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
-      public com.prolucid.protoshell.messages.Multilang.Heartbeat getHearbeat() {
-        if (hearbeatBuilder_ == null) {
+      public com.prolucid.protoshell.messages.Multilang.Heartbeat getHeartbeat() {
+        if (heartbeatBuilder_ == null) {
           if (msgCase_ == 7) {
             return (com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_;
           }
           return com.prolucid.protoshell.messages.Multilang.Heartbeat.getDefaultInstance();
         } else {
           if (msgCase_ == 7) {
-            return hearbeatBuilder_.getMessage();
+            return heartbeatBuilder_.getMessage();
           }
           return com.prolucid.protoshell.messages.Multilang.Heartbeat.getDefaultInstance();
         }
       }
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
-      public Builder setHearbeat(com.prolucid.protoshell.messages.Multilang.Heartbeat value) {
-        if (hearbeatBuilder_ == null) {
+      public Builder setHeartbeat(com.prolucid.protoshell.messages.Multilang.Heartbeat value) {
+        if (heartbeatBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           msg_ = value;
           onChanged();
         } else {
-          hearbeatBuilder_.setMessage(value);
+          heartbeatBuilder_.setMessage(value);
         }
         msgCase_ = 7;
         return this;
       }
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
-      public Builder setHearbeat(
+      public Builder setHeartbeat(
           com.prolucid.protoshell.messages.Multilang.Heartbeat.Builder builderForValue) {
-        if (hearbeatBuilder_ == null) {
+        if (heartbeatBuilder_ == null) {
           msg_ = builderForValue.build();
           onChanged();
         } else {
-          hearbeatBuilder_.setMessage(builderForValue.build());
+          heartbeatBuilder_.setMessage(builderForValue.build());
         }
         msgCase_ = 7;
         return this;
       }
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
-      public Builder mergeHearbeat(com.prolucid.protoshell.messages.Multilang.Heartbeat value) {
-        if (hearbeatBuilder_ == null) {
+      public Builder mergeHeartbeat(com.prolucid.protoshell.messages.Multilang.Heartbeat value) {
+        if (heartbeatBuilder_ == null) {
           if (msgCase_ == 7 &&
               msg_ != com.prolucid.protoshell.messages.Multilang.Heartbeat.getDefaultInstance()) {
             msg_ = com.prolucid.protoshell.messages.Multilang.Heartbeat.newBuilder((com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_)
@@ -7442,18 +8198,18 @@ public final class Multilang {
           onChanged();
         } else {
           if (msgCase_ == 7) {
-            hearbeatBuilder_.mergeFrom(value);
+            heartbeatBuilder_.mergeFrom(value);
           }
-          hearbeatBuilder_.setMessage(value);
+          heartbeatBuilder_.setMessage(value);
         }
         msgCase_ = 7;
         return this;
       }
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
-      public Builder clearHearbeat() {
-        if (hearbeatBuilder_ == null) {
+      public Builder clearHeartbeat() {
+        if (heartbeatBuilder_ == null) {
           if (msgCase_ == 7) {
             msgCase_ = 0;
             msg_ = null;
@@ -7464,22 +8220,22 @@ public final class Multilang {
             msgCase_ = 0;
             msg_ = null;
           }
-          hearbeatBuilder_.clear();
+          heartbeatBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
-      public com.prolucid.protoshell.messages.Multilang.Heartbeat.Builder getHearbeatBuilder() {
-        return getHearbeatFieldBuilder().getBuilder();
+      public com.prolucid.protoshell.messages.Multilang.Heartbeat.Builder getHeartbeatBuilder() {
+        return getHeartbeatFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
-      public com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder getHearbeatOrBuilder() {
-        if ((msgCase_ == 7) && (hearbeatBuilder_ != null)) {
-          return hearbeatBuilder_.getMessageOrBuilder();
+      public com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder getHeartbeatOrBuilder() {
+        if ((msgCase_ == 7) && (heartbeatBuilder_ != null)) {
+          return heartbeatBuilder_.getMessageOrBuilder();
         } else {
           if (msgCase_ == 7) {
             return (com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_;
@@ -7488,16 +8244,16 @@ public final class Multilang {
         }
       }
       /**
-       * <code>optional .Heartbeat hearbeat = 7;</code>
+       * <code>optional .Heartbeat heartbeat = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
           com.prolucid.protoshell.messages.Multilang.Heartbeat, com.prolucid.protoshell.messages.Multilang.Heartbeat.Builder, com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder> 
-          getHearbeatFieldBuilder() {
-        if (hearbeatBuilder_ == null) {
+          getHeartbeatFieldBuilder() {
+        if (heartbeatBuilder_ == null) {
           if (!(msgCase_ == 7)) {
             msg_ = com.prolucid.protoshell.messages.Multilang.Heartbeat.getDefaultInstance();
           }
-          hearbeatBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+          heartbeatBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               com.prolucid.protoshell.messages.Multilang.Heartbeat, com.prolucid.protoshell.messages.Multilang.Heartbeat.Builder, com.prolucid.protoshell.messages.Multilang.HeartbeatOrBuilder>(
                   (com.prolucid.protoshell.messages.Multilang.Heartbeat) msg_,
                   getParentForChildren(),
@@ -7506,7 +8262,267 @@ public final class Multilang {
         }
         msgCase_ = 7;
         onChanged();;
-        return hearbeatBuilder_;
+        return heartbeatBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilder<
+          com.prolucid.protoshell.messages.Multilang.ActivateCommand, com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder, com.prolucid.protoshell.messages.Multilang.ActivateCommandOrBuilder> activateCmdBuilder_;
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      public com.prolucid.protoshell.messages.Multilang.ActivateCommand getActivateCmd() {
+        if (activateCmdBuilder_ == null) {
+          if (msgCase_ == 8) {
+            return (com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_;
+          }
+          return com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance();
+        } else {
+          if (msgCase_ == 8) {
+            return activateCmdBuilder_.getMessage();
+          }
+          return com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      public Builder setActivateCmd(com.prolucid.protoshell.messages.Multilang.ActivateCommand value) {
+        if (activateCmdBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          msg_ = value;
+          onChanged();
+        } else {
+          activateCmdBuilder_.setMessage(value);
+        }
+        msgCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      public Builder setActivateCmd(
+          com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder builderForValue) {
+        if (activateCmdBuilder_ == null) {
+          msg_ = builderForValue.build();
+          onChanged();
+        } else {
+          activateCmdBuilder_.setMessage(builderForValue.build());
+        }
+        msgCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      public Builder mergeActivateCmd(com.prolucid.protoshell.messages.Multilang.ActivateCommand value) {
+        if (activateCmdBuilder_ == null) {
+          if (msgCase_ == 8 &&
+              msg_ != com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance()) {
+            msg_ = com.prolucid.protoshell.messages.Multilang.ActivateCommand.newBuilder((com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            msg_ = value;
+          }
+          onChanged();
+        } else {
+          if (msgCase_ == 8) {
+            activateCmdBuilder_.mergeFrom(value);
+          }
+          activateCmdBuilder_.setMessage(value);
+        }
+        msgCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      public Builder clearActivateCmd() {
+        if (activateCmdBuilder_ == null) {
+          if (msgCase_ == 8) {
+            msgCase_ = 0;
+            msg_ = null;
+            onChanged();
+          }
+        } else {
+          if (msgCase_ == 8) {
+            msgCase_ = 0;
+            msg_ = null;
+          }
+          activateCmdBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      public com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder getActivateCmdBuilder() {
+        return getActivateCmdFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      public com.prolucid.protoshell.messages.Multilang.ActivateCommandOrBuilder getActivateCmdOrBuilder() {
+        if ((msgCase_ == 8) && (activateCmdBuilder_ != null)) {
+          return activateCmdBuilder_.getMessageOrBuilder();
+        } else {
+          if (msgCase_ == 8) {
+            return (com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_;
+          }
+          return com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .ActivateCommand activateCmd = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.prolucid.protoshell.messages.Multilang.ActivateCommand, com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder, com.prolucid.protoshell.messages.Multilang.ActivateCommandOrBuilder> 
+          getActivateCmdFieldBuilder() {
+        if (activateCmdBuilder_ == null) {
+          if (!(msgCase_ == 8)) {
+            msg_ = com.prolucid.protoshell.messages.Multilang.ActivateCommand.getDefaultInstance();
+          }
+          activateCmdBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.prolucid.protoshell.messages.Multilang.ActivateCommand, com.prolucid.protoshell.messages.Multilang.ActivateCommand.Builder, com.prolucid.protoshell.messages.Multilang.ActivateCommandOrBuilder>(
+                  (com.prolucid.protoshell.messages.Multilang.ActivateCommand) msg_,
+                  getParentForChildren(),
+                  isClean());
+          msg_ = null;
+        }
+        msgCase_ = 8;
+        onChanged();;
+        return activateCmdBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilder<
+          com.prolucid.protoshell.messages.Multilang.DeactivateCommand, com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder, com.prolucid.protoshell.messages.Multilang.DeactivateCommandOrBuilder> deactivateCmdBuilder_;
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      public com.prolucid.protoshell.messages.Multilang.DeactivateCommand getDeactivateCmd() {
+        if (deactivateCmdBuilder_ == null) {
+          if (msgCase_ == 9) {
+            return (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_;
+          }
+          return com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance();
+        } else {
+          if (msgCase_ == 9) {
+            return deactivateCmdBuilder_.getMessage();
+          }
+          return com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      public Builder setDeactivateCmd(com.prolucid.protoshell.messages.Multilang.DeactivateCommand value) {
+        if (deactivateCmdBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          msg_ = value;
+          onChanged();
+        } else {
+          deactivateCmdBuilder_.setMessage(value);
+        }
+        msgCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      public Builder setDeactivateCmd(
+          com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder builderForValue) {
+        if (deactivateCmdBuilder_ == null) {
+          msg_ = builderForValue.build();
+          onChanged();
+        } else {
+          deactivateCmdBuilder_.setMessage(builderForValue.build());
+        }
+        msgCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      public Builder mergeDeactivateCmd(com.prolucid.protoshell.messages.Multilang.DeactivateCommand value) {
+        if (deactivateCmdBuilder_ == null) {
+          if (msgCase_ == 9 &&
+              msg_ != com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance()) {
+            msg_ = com.prolucid.protoshell.messages.Multilang.DeactivateCommand.newBuilder((com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            msg_ = value;
+          }
+          onChanged();
+        } else {
+          if (msgCase_ == 9) {
+            deactivateCmdBuilder_.mergeFrom(value);
+          }
+          deactivateCmdBuilder_.setMessage(value);
+        }
+        msgCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      public Builder clearDeactivateCmd() {
+        if (deactivateCmdBuilder_ == null) {
+          if (msgCase_ == 9) {
+            msgCase_ = 0;
+            msg_ = null;
+            onChanged();
+          }
+        } else {
+          if (msgCase_ == 9) {
+            msgCase_ = 0;
+            msg_ = null;
+          }
+          deactivateCmdBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      public com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder getDeactivateCmdBuilder() {
+        return getDeactivateCmdFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      public com.prolucid.protoshell.messages.Multilang.DeactivateCommandOrBuilder getDeactivateCmdOrBuilder() {
+        if ((msgCase_ == 9) && (deactivateCmdBuilder_ != null)) {
+          return deactivateCmdBuilder_.getMessageOrBuilder();
+        } else {
+          if (msgCase_ == 9) {
+            return (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_;
+          }
+          return com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>optional .DeactivateCommand deactivateCmd = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.prolucid.protoshell.messages.Multilang.DeactivateCommand, com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder, com.prolucid.protoshell.messages.Multilang.DeactivateCommandOrBuilder> 
+          getDeactivateCmdFieldBuilder() {
+        if (deactivateCmdBuilder_ == null) {
+          if (!(msgCase_ == 9)) {
+            msg_ = com.prolucid.protoshell.messages.Multilang.DeactivateCommand.getDefaultInstance();
+          }
+          deactivateCmdBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.prolucid.protoshell.messages.Multilang.DeactivateCommand, com.prolucid.protoshell.messages.Multilang.DeactivateCommand.Builder, com.prolucid.protoshell.messages.Multilang.DeactivateCommandOrBuilder>(
+                  (com.prolucid.protoshell.messages.Multilang.DeactivateCommand) msg_,
+                  getParentForChildren(),
+                  isClean());
+          msg_ = null;
+        }
+        msgCase_ = 9;
+        onChanged();;
+        return deactivateCmdBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -13640,6 +14656,16 @@ public final class Multilang {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_NackCommand_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_ActivateCommand_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_ActivateCommand_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_DeactivateCommand_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_DeactivateCommand_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_StormMsg_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -13714,31 +14740,34 @@ public final class Multilang {
       "\004task\030\004 \001(\005\022\027\n\005tuple\030\005 \003(\0132\010.Variant\"\037\n\014" +
       "TaskIdsReply\022\017\n\007taskIds\030\001 \003(\005\"\013\n\tHeartbe",
       "at\"\r\n\013NextCommand\"\030\n\nAckCommand\022\n\n\002id\030\001 " +
-      "\001(\t\"\031\n\013NackCommand\022\n\n\002id\030\001 \001(\t\"\364\001\n\010Storm" +
+      "\001(\t\"\031\n\013NackCommand\022\n\n\002id\030\001 \001(\t\"\021\n\017Activa" +
+      "teCommand\"\023\n\021DeactivateCommand\"\313\002\n\010Storm" +
       "Msg\022\037\n\thandshake\030\001 \001(\0132\n.HandshakeH\000\022\037\n\007" +
       "nextCmd\030\002 \001(\0132\014.NextCommandH\000\022\035\n\006ackCmd\030" +
       "\003 \001(\0132\013.AckCommandH\000\022\037\n\007nackCmd\030\004 \001(\0132\014." +
       "NackCommandH\000\022\035\n\010streamIn\030\005 \001(\0132\t.Stream" +
-      "InH\000\022 \n\007taskIds\030\006 \001(\0132\r.TaskIdsReplyH\000\022\036" +
-      "\n\010hearbeat\030\007 \001(\0132\n.HeartbeatH\000B\005\n\003msg\"\025\n" +
-      "\007OkReply\022\n\n\002id\030\001 \001(\t\"\027\n\tFailReply\022\n\n\002id\030" +
-      "\001 \001(\t\"v\n\013EmitCommand\022\n\n\002id\030\001 \001(\t\022\016\n\006stre",
-      "am\030\002 \001(\t\022\027\n\005tuple\030\003 \003(\0132\010.Variant\022\017\n\007anc" +
-      "hors\030\004 \003(\t\022\014\n\004task\030\005 \001(\005\022\023\n\013needTaskIds\030" +
-      "\006 \001(\010\"\200\001\n\nLogCommand\022\014\n\004text\030\001 \001(\t\022#\n\005le" +
-      "vel\030\002 \001(\0162\024.LogCommand.LogLevel\"?\n\010LogLe" +
-      "vel\022\t\n\005Trace\020\000\022\t\n\005Debug\020\001\022\010\n\004Info\020\002\022\010\n\004W" +
-      "arn\020\003\022\t\n\005Error\020\004\"\027\n\010PidReply\022\013\n\003pid\030\001 \001(" +
-      "\005\"\013\n\tSyncReply\"B\n\006Metric\022\014\n\004name\030\001 \001(\t\022*" +
-      "\n\nparameters\030\002 \003(\0132\026.google.protobuf.Val" +
-      "ue\"\316\001\n\010ShellMsg\022\026\n\002ok\030\001 \001(\0132\010.OkReplyH\000\022" +
-      "\032\n\004fail\030\002 \001(\0132\n.FailReplyH\000\022\034\n\004emit\030\003 \001(",
-      "\0132\014.EmitCommandH\000\022\030\n\003pid\030\004 \001(\0132\t.PidRepl" +
-      "yH\000\022\032\n\003log\030\005 \001(\0132\013.LogCommandH\000\022\032\n\004sync\030" +
-      "\006 \001(\0132\n.SyncReplyH\000\022\027\n\006metric\030\007 \001(\0132\007.Me" +
-      "tricB\005\n\003msgBA\n com.prolucid.protoshell.m" +
-      "essages\252\002\034Prolucid.ProtoShell.Messagesb\006" +
-      "proto3"
+      "InH\000\022 \n\007taskIds\030\006 \001(\0132\r.TaskIdsReplyH\000\022\037" +
+      "\n\theartbeat\030\007 \001(\0132\n.HeartbeatH\000\022\'\n\013activ" +
+      "ateCmd\030\010 \001(\0132\020.ActivateCommandH\000\022+\n\rdeac",
+      "tivateCmd\030\t \001(\0132\022.DeactivateCommandH\000B\005\n" +
+      "\003msg\"\025\n\007OkReply\022\n\n\002id\030\001 \001(\t\"\027\n\tFailReply" +
+      "\022\n\n\002id\030\001 \001(\t\"v\n\013EmitCommand\022\n\n\002id\030\001 \001(\t\022" +
+      "\016\n\006stream\030\002 \001(\t\022\027\n\005tuple\030\003 \003(\0132\010.Variant" +
+      "\022\017\n\007anchors\030\004 \003(\t\022\014\n\004task\030\005 \001(\005\022\023\n\013needT" +
+      "askIds\030\006 \001(\010\"\200\001\n\nLogCommand\022\014\n\004text\030\001 \001(" +
+      "\t\022#\n\005level\030\002 \001(\0162\024.LogCommand.LogLevel\"?" +
+      "\n\010LogLevel\022\t\n\005Trace\020\000\022\t\n\005Debug\020\001\022\010\n\004Info" +
+      "\020\002\022\010\n\004Warn\020\003\022\t\n\005Error\020\004\"\027\n\010PidReply\022\013\n\003p" +
+      "id\030\001 \001(\005\"\013\n\tSyncReply\"B\n\006Metric\022\014\n\004name\030",
+      "\001 \001(\t\022*\n\nparameters\030\002 \003(\0132\026.google.proto" +
+      "buf.Value\"\316\001\n\010ShellMsg\022\026\n\002ok\030\001 \001(\0132\010.OkR" +
+      "eplyH\000\022\032\n\004fail\030\002 \001(\0132\n.FailReplyH\000\022\034\n\004em" +
+      "it\030\003 \001(\0132\014.EmitCommandH\000\022\030\n\003pid\030\004 \001(\0132\t." +
+      "PidReplyH\000\022\032\n\003log\030\005 \001(\0132\013.LogCommandH\000\022\032" +
+      "\n\004sync\030\006 \001(\0132\n.SyncReplyH\000\022\027\n\006metric\030\007 \001" +
+      "(\0132\007.MetricB\005\n\003msgBA\n com.prolucid.proto" +
+      "shell.messages\252\002\034Prolucid.ProtoShell.Mes" +
+      "sagesb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -13820,56 +14849,68 @@ public final class Multilang {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_NackCommand_descriptor,
         new java.lang.String[] { "Id", });
-    internal_static_StormMsg_descriptor =
+    internal_static_ActivateCommand_descriptor =
       getDescriptor().getMessageTypes().get(9);
+    internal_static_ActivateCommand_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_ActivateCommand_descriptor,
+        new java.lang.String[] { });
+    internal_static_DeactivateCommand_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_DeactivateCommand_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_DeactivateCommand_descriptor,
+        new java.lang.String[] { });
+    internal_static_StormMsg_descriptor =
+      getDescriptor().getMessageTypes().get(11);
     internal_static_StormMsg_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_StormMsg_descriptor,
-        new java.lang.String[] { "Handshake", "NextCmd", "AckCmd", "NackCmd", "StreamIn", "TaskIds", "Hearbeat", "Msg", });
+        new java.lang.String[] { "Handshake", "NextCmd", "AckCmd", "NackCmd", "StreamIn", "TaskIds", "Heartbeat", "ActivateCmd", "DeactivateCmd", "Msg", });
     internal_static_OkReply_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_OkReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_OkReply_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_FailReply_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_FailReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_FailReply_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_EmitCommand_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_EmitCommand_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_EmitCommand_descriptor,
         new java.lang.String[] { "Id", "Stream", "Tuple", "Anchors", "Task", "NeedTaskIds", });
     internal_static_LogCommand_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_LogCommand_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_LogCommand_descriptor,
         new java.lang.String[] { "Text", "Level", });
     internal_static_PidReply_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_PidReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_PidReply_descriptor,
         new java.lang.String[] { "Pid", });
     internal_static_SyncReply_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_SyncReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_SyncReply_descriptor,
         new java.lang.String[] { });
     internal_static_Metric_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_Metric_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_Metric_descriptor,
         new java.lang.String[] { "Name", "Parameters", });
     internal_static_ShellMsg_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_ShellMsg_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_ShellMsg_descriptor,

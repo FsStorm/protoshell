@@ -27,6 +27,8 @@ public class ProtoSerializer implements ISerializer {
 	InputStream processOut;
 	static Multilang.Heartbeat heartbeat = Multilang.Heartbeat.newBuilder().build();
 	static Multilang.NextCommand next = Multilang.NextCommand.newBuilder().build();
+	static Multilang.ActivateCommand activate = Multilang.ActivateCommand.newBuilder().build();
+	static Multilang.DeactivateCommand deactivate = Multilang.DeactivateCommand.newBuilder().build();
 
 	public void initialize(OutputStream processIn, InputStream processOut) {
 		this.processIn = processIn;
@@ -193,7 +195,7 @@ public class ProtoSerializer implements ISerializer {
 	public void writeBoltMsg(BoltMsg msg) throws IOException {
 		Multilang.StormMsg.Builder b = Multilang.StormMsg.newBuilder();
 		if (msg.getStream() == "__heartbeat") {
-			b.setHearbeat(heartbeat);
+			b.setHeartbeat(heartbeat);
 		} else {
 			List<Multilang.Variant> fields = new ArrayList<Multilang.Variant>();
 			for (Object o: msg.getTuple()) {
@@ -219,6 +221,10 @@ public class ProtoSerializer implements ISerializer {
 			b.setAckCmd(Multilang.AckCommand.newBuilder().setId(msg.getId().toString()));
 		} else if (msg.getCommand() == "fail") {
 			b.setNackCmd(Multilang.NackCommand.newBuilder().setId(msg.getId().toString()));
+		} else if (msg.getCommand() == "activate") {
+			b.setActivateCmd(activate);
+		} else if (msg.getCommand() == "deactivate") {
+			b.setDeactivateCmd(deactivate);
 		} else {
 			throw new IOException(this.compPid+"Unexpected spout message: "+msg.getCommand()	);
 		}
