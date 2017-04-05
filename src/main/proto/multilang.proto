@@ -70,6 +70,12 @@ message NackCommand {
 	string id = 1;
 }
 
+message ActivateCommand {
+}
+
+message DeactivateCommand {
+}
+
 message StormMsg {
     oneof msg {
         Handshake handshake = 1;
@@ -78,7 +84,9 @@ message StormMsg {
         NackCommand nackCmd = 4;
         StreamIn streamIn = 5;
         TaskIdsReply taskIds= 6;
-        Heartbeat hearbeat = 7;
+        Heartbeat heartbeat = 7;
+        ActivateCommand activateCmd = 8;
+        DeactivateCommand deactivateCmd = 9;
     }
 }
 
