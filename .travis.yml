@@ -7,6 +7,6 @@ deploy:
   api_key:
     secure: vtjtMsBcFVCZTMQ904PSvm2iWSYe0r6DaNtEbn/TUxH8sXFaSWnK85fIGkucllyhDsOGk+4BpojPDY8KqK8wyJ3wtzZavoWaCRUu8UnTxqM5aO0o33cunGeIe1rpLTWWMQoZ6MufPzhbXMjTMUzt26EvCTXyew4xspMbHhF7ZYLfszyVlqUoxTs2UXMn33gHzVDJJKUILsZ2BSsaVSLYWtvdgPxIvEDTF13VhCfIyhzS5GJO5NngppdcIpGPWP2zufmCZtu5P9LEYS4PI5MjRQaBq2ELE8o7i4nG5hVOvKKy1x/pCg6fXmVrOJEL+a6r/RqqKd6uWu5k/xneTQSFQ1+QL+/SJrtcqFqzdtfH6GBhuFcZA9s0Wn4L6VJj1O6pnuGJYH61KVZcfe1Dzt4kIQZecMjIZrL4xf3fXztALElJ0Fxk2XmOf8KNR1Wtsc9TsMAZWyVy7ID/V1+qTzj9I5OFj588Kqe3+NN+F8e19gg8/u17QQnuUKH+XDGru1SfDwd/dQWBiK5zaMe5QqR7xJY8yH4grjnuVqALsIO1Sl+C+0z59pKlTa4CWwTv9hHxHqJxK3CHoQApkAX7cxsXnFqkWH4llJgA5gsV4/u3mi9E67eo4ZOYJmHw5Oc2wIa7Lzw3nmW4Sgxa3QRmtvWa5K8TbQ24AH1p/E2DFKkHji8=
   skip_cleanup: true
-  file: target/protoshell-1.0.1-SNAPSHOT-jar-with-dependencies.jar
+  file: target/protoshell-1.1.0-SNAPSHOT-jar-with-dependencies.jar
   on:
     tags: true
