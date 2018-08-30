@@ -142,7 +142,10 @@ public class ProtoSerializer implements ISerializer {
 
         LOG.info("Waiting for pid from component");
         Multilang.ShellMsg inMsg = readMessage(Multilang.ShellMsg.parser());
-        LOG.info("Shell component connection established.");
+        if(inMsg == null)
+			throw new IOException("Shell component connection failed - no pid received.");
+		else
+			LOG.info("Shell component connection established.");
 		this.compPid = "["+context.getThisComponentId() + "@" +inMsg.getPid().getPid()+"]: ";
         return inMsg.getPid().getPid();
 	}
