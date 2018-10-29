@@ -13,7 +13,7 @@
 syntax = "proto3";
 
 option java_package = "com.prolucid.protoshell.messages";
-option csharp_namespace = "Prolucid.ProtoShell.Messages";
+option csharp_namespace = "FsStorm.ProtoShell.Messages";
 
 import "google/protobuf/struct.proto";
 import "google/protobuf/timestamp.proto";

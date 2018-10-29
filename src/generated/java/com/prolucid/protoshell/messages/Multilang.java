@@ -14766,7 +14766,7 @@ public final class Multilang {
       "PidReplyH\000\022\032\n\003log\030\005 \001(\0132\013.LogCommandH\000\022\032" +
       "\n\004sync\030\006 \001(\0132\n.SyncReplyH\000\022\027\n\006metric\030\007 \001" +
       "(\0132\007.MetricB\005\n\003msgBA\n com.prolucid.proto" +
-      "shell.messages\252\002\034Prolucid.ProtoShell.Mes" +
+      "shell.messages\252\002\034FsStorm.ProtoShell.Mes" +
       "sagesb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

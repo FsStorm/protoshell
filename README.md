@@ -1,4 +1,4 @@
-# Protoshell [![Build status:](https://travis-ci.org/Prolucid/protoshell.svg?branch=master)](https://travis-ci.org/Prolucid/protoshell)
+# Protoshell [![Build status:](https://travis-ci.org/FsStorm/protoshell.svg?branch=master)](https://travis-ci.org/FsStorm/protoshell)
 Loosely based on [Protoshell](https://github.com/jsgilmore/protoshell)
 
 Protoshell implements Storm's multilang using the Protobuf serializer to improve throughput and decrease CPU when compared to the default JSON serializer.
